@@ -4,7 +4,7 @@
 {% block contenidoQueCambia %}
 
     <Div style="padding-top: 8rem; padding-left: 1rem; padding-bottom: 1rem;">
-        <h3>Los resultados de {{modelo}} son:</h3>
+        <h3>Los resultados de {{marca}} son:</h3>
     </Div>
 
     {% if autos %}
@@ -12,6 +12,7 @@
             <ul>
                 {% for auto in autos %}
                     <li>
+                        Marca: {{auto.marca}}
                         Modelo: {{auto.modelo}} 
                         Año: {{auto.año}}
                         Kilometros: {{auto.kilometros}}km
@@ -23,7 +24,7 @@
         </div>
 
         {% else %} 
-            <h3>No se a encontrado ningun auto de la marca {{modelo}}</h3>
+            <h3>No se a encontrado ningun auto de la marca {{marca}}</h3>
     {% endif %}
         
 {% endblock contenidoQueCambia %}

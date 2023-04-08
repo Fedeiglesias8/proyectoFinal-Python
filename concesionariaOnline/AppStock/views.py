@@ -9,14 +9,13 @@ def inicio(self):
     return render(self, 'inicio.html')
 
 def venta(request):
-
     if request.method == 'POST':  
       miFormulario = AutosFormularios(request.POST)
 
       if miFormulario.is_valid():
           data = miFormulario.cleaned_data
 
-          auto = Autos(modelo=data['modelo'], año=data['año'], kilometros=data['kilometros'], descripcion=data['descripcion'], precio=data['precio'])
+          auto = Autos(marca=data['marca'], modelo=data['modelo'], año=data['año'], kilometros=data['kilometros'], descripcion=data['descripcion'], precio=data['precio'])
           auto.save()
     
           return render(request, "inicio.html")
@@ -36,7 +35,7 @@ def alquiler(request):
         if miFormulario.is_valid(): 
             data = miFormulario.cleaned_data
 
-            alquiler = Alquiler(modelo=data['modelo'], año=data['año'], descripcion=data['descripcion'], precio=data['precio'])
+            alquiler = Alquiler(marca=data['marca'], año=data['año'], descripcion=data['descripcion'], precio=data['precio'])
             alquiler.save()
         
             return render(request, "inicio.html")
@@ -83,7 +82,7 @@ def buscarCompra(request):
 
     if request.GET['modelo']:
 
-        modelo= request.GET['modelo']
-        autos= Autos.objects.filter(modelo=modelo)
+        marca= request.GET['modelo']
+        autos= Autos.objects.filter(marca=marca)
 
-        return render(request, 'resultadoDeBusqueda.html',{'autos': autos, 'modelo': modelo})
+        return render(request, 'resultadoDeBusqueda.html',{'autos': autos, 'marca': marca})

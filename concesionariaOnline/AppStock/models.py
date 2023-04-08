@@ -3,6 +3,7 @@ from django.db import models
 # Create your models here.
 
 class Autos(models.Model):
+    marca= models.CharField(max_length=20)
     modelo= models.CharField(max_length=20)
     año= models.IntegerField()
     kilometros= models.IntegerField()
@@ -10,16 +11,16 @@ class Autos(models.Model):
     precio= models.IntegerField()
 
     def __str__(self):
-        return self.modelo
+        return f'{self.marca} - {self.modelo}'
 
 class Alquiler(models.Model):
-    modelo= models.CharField(max_length=20)
+    marca= models.CharField(max_length=20)
     año= models.IntegerField()
     descripcion= models.CharField(max_length=250)
     precio= models.IntegerField()
 
     def __str__(self):
-        return self.modelo
+        return self.marca
 
 class Asesoramiento(models.Model):
     nombre= models.CharField(max_length=20)
