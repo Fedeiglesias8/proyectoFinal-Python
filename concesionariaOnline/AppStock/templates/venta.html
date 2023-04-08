@@ -1,0 +1,21 @@
+{% extends 'padre.html' %}
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+    <Div style="padding-top: 8rem; padding-left: 1rem;">
+        <h3>Queres publicar tu auto? ingresa </h3>
+        <a class="btn btn-primary btn-lg text-dark" href="{% url 'venta' %}">aqui</a>
+    </Div>
+        <br>
+        <h4>Dejanos los datos del auto que nosotros lo publicamos!</h4>
+        <form action="{% url 'venta' %}" method="POST">{% csrf_token %}
+
+            {{miFormulario.as_p}}
+            
+            <button type="submit" class="btn btn-primary btn-s text-dark"> Enviar </button>
+        </form>
+    
+    
+
+{% endblock contenidoQueCambia %}

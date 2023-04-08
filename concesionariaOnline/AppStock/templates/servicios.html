@@ -1,0 +1,44 @@
+{% extends 'padre.html' %}
+{% load static %}
+
+{% block contenidoQueCambia %}
+    <section class="page-section" id="servicios">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Servicios</h2>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Compra y Venta</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
+                        architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <a class="btn btn-primary btn-lg text-dark" href="{% url 'compra' %}">Mas...</a>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Alquiler de autos</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
+                        architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <a class="btn btn-primary btn-lg text-dark" href="{% url 'alquiler' %}">Mas...</a>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Asesoramiento de Compra</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
+                        architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <a class="btn btn-primary btn-lg text-dark" href="{% url 'asesoramiento' %}">Mas...</a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock contenidoQueCambia %}
