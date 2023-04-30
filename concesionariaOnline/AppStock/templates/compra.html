@@ -3,19 +3,32 @@
 
 {% block contenidoQueCambia %}
 
-    <Div style="padding-top: 8rem; padding-left: 1rem; padding-bottom: 2rem;">
-        <h3>Queres publicar tu auto? ingresa </h3>
-        <a class="btn btn-primary btn-lg text-dark" href="{% url 'venta' %}">aqui</a>
-    </Div>
-    
-    <h4>Ingresa la marca de auto que estas buscando!</h4>
-    <form action="{% url 'buscarCompra' %}" method="get">{% csrf_token %}
+    <div class="divCompra1">
+        <h5>Filtra la busqueda por la marca del auto que te interese!</h5>
+        <form action="{% url 'buscarCompra' %}" method="get">{% csrf_token %}
+            <div >
+                <p><input type="text" name="modelo" placeholder="Marca"></p>
+                <button type="submit" class="btn btn-primary btn-s text-dark"> Filtrar </button>
+            </div>
+        </form>
+    </div>
 
-        <p>Marca:<input type="text" name="modelo"></p>
-        
-        <button type="submit" class="btn btn-primary btn-s text-dark"> Buscar </button>
-    </form>
-
-    
-
+    <div class="divCompra2">
+            {% for auto in listadoDeAutos %}
+                    <div>
+                        <a href="{% url 'detalleDelAuto' auto.id %}">
+                            <div class="card">
+                                <img src={{auto.imagen.url}} class="card-img-top" alt="imagen del auto">
+                                <div class="card-body">
+                                    <h4 class="card-text">{{auto.marca}} {{auto.modelo}}</h4>
+                                    <div class="divP">
+                                        <p>{{auto.kilometros}}km </p>
+                                        <p>${{auto.precio}}</p>
+                                    </div>
+                                </div>
+                            </div> 
+                        </a>
+                    </div>
+            {% endfor %}  
+    </div>
 {% endblock contenidoQueCambia %}

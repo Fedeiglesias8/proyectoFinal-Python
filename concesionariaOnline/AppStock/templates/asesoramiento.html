@@ -3,16 +3,17 @@
 
 {% block contenidoQueCambia %}
 
-<Div style="padding-top: 8rem; padding-left: 1rem;">
-    <h2>Te asesoramos al momento de comprar un auto para que sea el indicado para vos!</h2>
+<Div class="saludoAsesoramiento">
+    <h3>Te asesoramos al momento de comprar un auto para que sea el indicado para vos!</h3>
 </Div>
-<br>
-<h4>Ingrese los datos!</h4>
-<form action="{% url 'asesoramiento' %}" method="POST">{% csrf_token %}
+<div class="divAsesoramiento">
+    <h5 >Ingrese los datos!</h5>
+    <form action="{% url 'asesoramiento' %}" method="POST">{% csrf_token %}
 
-    {{miFormulario.as_p}}
+        {{form.as_p}}
 
-    <button type="submit" class="btn btn-primary btn-s text-dark"> Enviar </button>
+        <button type="submit" class="btn btn-primary btn-s text-dark"> Enviar </button>
 </form>
+</div>
 
 {% endblock contenidoQueCambia %}

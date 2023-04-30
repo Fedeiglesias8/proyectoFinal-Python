@@ -12,6 +12,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
+    
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
     --bs-purple: #6f42c1;
@@ -4576,9 +4577,436 @@ fieldset:disabled .btn {
         padding: 0;
         overflow-y: visible;
     }
+    #miCuenta  .divSaludo{
+        padding-top: 8rem;
+        padding-left: 30rem;
+        padding-bottom: 2rem;
+    }
+    #miCuenta  .divSaludo{
+        padding-top: 8rem;
+        padding-left: 10rem;
+        padding-bottom: 3rem;
+    }
+    #miCuenta .divFlex{
+        display: flex;
+        justify-content: center;
+    }
+    #miCuenta .divMiCuenta3{
+        display: flex;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+    #miCuenta .divMiCuenta5{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 14rem;
+    }
+    #miCuenta .divMiCuenta5 a{
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
 }
 
 @media (min-width: 1200px) {
+    /*MI CUENTA*/
+    #miCuenta  .divSaludo{
+        padding-top: 8rem;
+        padding-left: 10rem;
+        padding-bottom: 3rem;
+    }
+    #miCuenta .divFlex{
+        display: flex;
+        justify-content: center;
+    }
+    #miCuenta .divMiCuenta3{
+        display: flex;
+        align-items: center;
+        padding-bottom: 3rem;
+    }
+    #miCuenta .divMiCuenta3 div{
+        display: block; 
+        margin-left: 2rem;
+    }
+
+    #miCuenta .divMiCuenta5{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10rem;
+    }
+    #miCuenta .divMiCuenta5 a{
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+    /*EDITAR USUARIO*/
+    .saludoEditarUsuario{
+        padding-top: 8rem;
+        padding-left: 10rem;
+        padding-bottom: 3rem;
+    }
+    .divEeditarUsuario{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5rem;
+    }
+    .divEeditarUsuario button {
+        margin-top: 2rem;
+    }
+    /*AGREGAR AVATAR*/
+    .saludoAgregarAvatar{
+        padding-top: 8rem;
+        padding-left: 10rem;
+        padding-bottom: 3rem;
+    }
+    .formAgregarAvatar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 12rem;
+    }
+    .formAgregarAvatar button {
+        margin-top: 2rem;
+    }
+
+    /*ASESORAMIENTO*/
+    .saludoAsesoramiento{
+        padding-top: 8rem; 
+        padding-left: 1rem;
+    }
+    .divAsesoramiento{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .divAsesoramiento h5 {
+        margin-bottom: 1rem;
+        margin-right: 12.5rem;
+    }
+    .divAsesoramiento button {
+        margin-top: 2rem;
+    }
+    
+    /*AUTO PUBLICADO*/
+    .divAutoPublicado{
+        display: flex;
+        justify-content: center;
+        margin-top: 10rem;
+        margin-bottom: 15rem;
+    }
+    .divAutoPublicado a {
+        padding-right: 8rem;
+        padding-left: 8rem;
+        margin-top: 4rem;
+        margin-left: 17rem;
+    }
+
+    /*CERRAR SESION*/
+    .divCerrarSesion{
+        display: flex;
+        justify-content: center;
+        margin-top: 10rem;
+        margin-bottom: 15rem;
+    }
+    .divCerrarSesion a {
+        padding-right: 8rem;
+        padding-left: 8rem;
+        margin-top: 4rem;
+        margin-left: 17rem;
+    }
+
+    /*COMPRA*/
+    .divCompra1{
+        padding-top: 8rem; 
+        padding-left: 1rem; 
+        padding-bottom: 2rem;
+    }
+    .divCompra2{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .divCompra2 div {
+        margin-bottom: 2.5rem;
+    }
+    .divCompra2 div a {
+        color: black;
+        text-decoration: none
+        
+    }
+    .divCompra2 div a .card {
+        width: 18rem;
+        display: flex;
+        align-items: center;
+    }
+    .divCompra2 div a .card {
+        width: 18rem;
+        height: 20rem;
+        display: flex;
+        align-items: center;
+    }
+    .divCompra2 div a .card .divP {
+        display: flex;
+    }
+    .divCompra2 div a .card .divP p {
+        margin-right: 2rem;
+    }
+
+    /*COMPRA FINALIZADA*/
+    .divCompraFinalizada{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+    }
+    .divCompraFinalizada h4 {
+        margin-top: 2rem;
+    }
+    .divCompraFinalizada a {
+        padding-right: 8rem;
+        padding-left: 8rem;
+        margin-top: 2rem;
+    }
+
+    /*COMPRAR AUTO */
+    .divComprarAuto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10rem;
+        margin-bottom: 14rem;
+    }
+    .divComprarCancelar{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 4.5rem;
+    }
+    
+    /*DETALLE DEL AUTO*/
+    .divDetalleAuto{
+        padding-top: 10rem; 
+        padding-left: 1rem; 
+        padding-bottom: 10rem; 
+        display: flex; 
+        justify-content: center;
+    }
+    .divDetalleAuto .card{
+        width: 18rem;
+    }
+    .divDetalleAuto .card .divOpcionBotones{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /*EDITAR PUBLICACION*/
+    .saludoEditarPublicacion{
+        margin-top: 8rem; 
+        margin-left: 5rem;
+        margin-bottom: 2rem;
+    }
+    .divEditarPublicacion{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5rem;
+    }
+    .divEditarPublicacion button {
+        margin-top: 2rem;
+    }
+    /*ERROR FILTRADO COMPRA*/
+    .divErrorFiltrado{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 8rem;
+        margin-bottom: 16rem;
+    }
+    .divErrorFiltrado h2 {
+        margin-top: 2rem;
+    }
+    .divErrorFiltrado a {
+        padding-right: 8rem;
+        padding-left: 8rem;
+        margin-top: 2rem;
+    }
+    
+    /*ERROR INICIAR SESION*/
+    .divErrorIiniciarSesion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10rem;
+        margin-bottom: 16rem;
+    }
+    .divErrorIiniciarSesion h2 {
+        margin-top: 2rem;
+    }
+    .divErrorIiniciarSesion a {
+        padding-right: 8rem;
+        padding-left: 8rem;
+        margin-top: 2rem;
+    }
+    
+    /*INICIAR SESION*/
+    .divIiniciarSesion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10rem;
+        margin-bottom: 7rem;
+    }
+    .divIiniciarSesion h2 {
+        margin-bottom: 2rem;
+    }
+    .divIiniciarSesion button {
+        padding-right: 8rem;
+        padding-left: 8rem;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+    .divRegistrarse a {
+        padding-right: 7rem;
+        padding-left: 7rem;
+        margin-top: 1em;
+        margin-left: 7rem;
+    }
+    
+    /*NOS COMUNICAREMOS*/
+    .divNosComunicaremos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10rem;
+        margin-bottom: 11rem;
+    }
+    .divNosComunicaremos h2 {
+        margin-top: 2rem;
+    }
+    .divNosComunicaremos a {
+        padding-right: 8rem;
+        padding-left: 8rem;
+        margin-top: 2rem;
+    }
+    
+    /*REGISTRAR*/
+    .divRegistrar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+    }
+    .divRegistrar h2{
+        margin-bottom: 2rem;
+    }
+    .divRegistrar button{
+        padding-right: 10rem;
+        padding-left: 10rem;
+        margin-top: 2rem;
+        margin-left: 13rem;
+    }
+    
+    /*RESULTADO DE BUSQUEDA*/
+    .divResultadoCompra1{
+        padding-top: 10rem; 
+        padding-left: 1rem; 
+        padding-bottom: 3rem;
+    }
+    .divResultadoCompra2{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .divResultadoCompra2 div {
+        margin-bottom: 2.5rem;
+    }
+    .divResultadoCompra2 div a {
+        color: black;
+        text-decoration: none
+        
+    }
+    .divResultadoCompra2 div a .card {
+        width: 18rem;
+        display: flex;
+        align-items: center;
+    }
+    .divResultadoCompra2 div a .card {
+        width: 18rem;
+        height: 20rem;
+        display: flex;
+        align-items: center;
+    }
+    .divResultadoCompra2 div a .card .divP {
+        display: flex;
+    }
+    .divResultadoCompra2 div a .card .divP p {
+        margin-right: 2rem;
+    }
+    .noBusco{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10rem;
+        margin-bottom: 17rem;
+    }
+    .noBusco a {
+        padding-right: 8rem;
+        padding-left: 8rem;
+        margin-top: 2rem;
+    }
+    
+    /*USUARIO CREADO*/
+    .divUsuarioCreado{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10rem;
+        margin-bottom: 17rem;
+    }
+    .divUsuarioCreado a {
+        padding-right: 8rem;
+        padding-left: 8rem;
+        margin-top: 2rem;
+    }
+    
+    /*USUARIO EDITADO*/
+    .divUsuarioEditado{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10rem;
+        margin-bottom: 17rem;
+    }
+    .divUsuarioEditado a {
+        padding-right: 8rem;
+        padding-left: 8rem;
+        margin-top: 2rem;
+    }
+    
+    /*EDITAR USUARIO*/
+    .saludoVenta{
+        padding-top: 8rem; 
+        padding-left: 1rem;
+    }
+    .divVenta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .divVenta button {
+        margin-top: 2rem;
+    }
+    
+    /*EDITAR USUARIO*/
+    
+    
+    /*EDITAR USUARIO*/
     .navbar-expand-xl {
         flex-wrap: nowrap;
         justify-content: flex-start;
@@ -4636,6 +5064,31 @@ fieldset:disabled .btn {
 }
 
 @media (min-width: 1400px) {
+    #miCuenta  .divSaludo{
+        padding-top: 8rem;
+        padding-left: 10rem;
+        padding-bottom: 3rem;
+    }
+    #miCuenta .divFlex{
+        display: flex;
+        justify-content: center;
+    }
+    #miCuenta .divMiCuenta3{
+        display: flex;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+    #miCuenta .divMiCuenta5{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 18rem;
+    }
+    #miCuenta .divMiCuenta5 a{
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+
     .navbar-expand-xxl {
         flex-wrap: nowrap;
         justify-content: flex-start;
@@ -12625,6 +13078,7 @@ p {
 
 .page-section {
     padding: 6rem 0;
+    margin-top: 2rem;
 }
 
 .page-section h2.section-heading,
@@ -12690,9 +13144,9 @@ p {
     background-color: #212529;
 }
 
-#mainNav .navbar-brand img {
-    height: 1.5rem;
-    background-color: #212529;
+#mainNav .navbar-brand img .logoNav{
+    height: 3rem;
+    
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -12724,7 +13178,7 @@ p {
     }
 
     #mainNav .navbar-brand img {
-        height: 2rem;
+        height: 3rem;
         transition: height 0.3s ease-in-out;
         background-color: #212529;
     }
@@ -12741,7 +13195,7 @@ p {
 
     #mainNav.navbar-shrink .navbar-brand svg,
     #mainNav.navbar-shrink .navbar-brand img {
-        height: 1.5rem;
+        height: 3rem;
     }
 
     #mainNav .navbar-nav .nav-item {
@@ -12758,11 +13212,8 @@ header.masthead {
     padding-bottom: 6rem;
     text-align: center;
     color: #fff;
-    background-image: url("../assets/img/header-bg.jpg");
-    background-repeat: no-repeat;
+    background-image: url("../assets/img/fondoInicio.jpg");
     background-attachment: scroll;
-    background-position: center center;
-    background-size: cover;
 }
 
 header.masthead .masthead-subheading {
